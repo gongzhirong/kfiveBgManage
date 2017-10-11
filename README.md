@@ -1,6 +1,6 @@
 # kfive
 
-> A Vue.js project
+> A Vue+Vue-route+Vuex+axios project
 
 ## Build Setup
 
