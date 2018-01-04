@@ -3,7 +3,9 @@ import Vuex from 'vuex'
 
 const state = {
   count: 20,
-  name: 'gongzhijie'
+  name: 'gongzhijie',
+  loginStatus: false,
+  backgroundColor: 'rgba(0, 0, 0, 0.60)'
 }
 
 const getters = {
@@ -13,6 +15,9 @@ const getters = {
 }
 
 const mutations = {
+  loginSuccess (state) {
+    state.loginStatus = true
+  },
   add (state) {
     state.count += 1
   },
@@ -34,13 +39,16 @@ const actions = {
   },
   reduceAction ({commit}) {
     commit('reduce')
+  },
+  loginSuccess (context) {
+    context.commit('loginSuccess')
   }
 }
 
 Vue.use(Vuex)
 
-const moduleA = {state, getters, mutations, actions}
+const publicInfo = {state, getters, mutations, actions}
 
 export default new Vuex.Store({
-  modules: {commonInfo: moduleA}
+  modules: {publicInfo: publicInfo}
 })

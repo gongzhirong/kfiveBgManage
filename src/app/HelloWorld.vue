@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h1>{{ $store.state.commonInfo.count }}</h1>
+    <h1 v-show="$store.state.commonInfo.count == 25">{{ $store.state.commonInfo.count }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>

@@ -5,6 +5,10 @@
     <button @click="addAction">加</button>
     <button @click="reduceAction">减</button>
     <button @click="changeName">更换名字</button>
+    <keep-alive>
+      <component :is="currentView"></component>
+    </keep-alive>
+    <button @click="changeComponent">换组件</button>
   </div>
 </template>
 
@@ -13,7 +17,8 @@
   export default {
     data () {
       return {
-        content: '测试vuex'
+        content: '测试vuex',
+        currentView: 'ComponentA'
       }
     },
     computed: {
@@ -25,6 +30,16 @@
       }
     },
     methods: {
+      ssss (x) {
+        console.log(x)
+      },
+      changeComponent () {
+        if (this.currentView === 'ComponentB') {
+          this.currentView = 'ComponentA'
+        } else {
+          this.currentView = 'ComponentB'
+        }
+      },
       addAction () {
         this.$store.dispatch('addAction')
         this.$message({

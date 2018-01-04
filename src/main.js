@@ -5,10 +5,23 @@ import App from './App'
 import router from './router'
 import store from './vuex/store'
 import ElementUi from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import myPlugin from './myPlugin'
+import CollapseTransition from 'element-ui/lib/transitions/collapse-transition'
+import 'element-ui/lib/theme-chalk/base.css'
+// import 'element-ui/lib/theme-default/index.css'
 
 Vue.use(ElementUi)
 Vue.config.productionTip = false
+
+Vue.component(CollapseTransition.name, CollapseTransition)
+
+Vue.directive('focus', {
+  inserted (el) {
+    el.focus()
+  }
+})
+// 插入我的插件
+Vue.use(myPlugin)
 
 /* eslint-disable no-new */
 new Vue({
