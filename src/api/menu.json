@@ -1,0 +1,28 @@
+[
+  {
+    "name": "kfive网页",
+    "icon": "el-icon-share",
+    "index": "1",
+    "list": [
+      {
+        "name": "图片库",
+        "list": null,
+        "index": "1",
+        "routPath": "http://www.kfive.cc/picturesLibrary/index.html"
+      }
+    ]
+  },
+  {
+    "name": "ken网页",
+    "icon": "el-icon-share",
+    "index": "2",
+    "list": [
+      {
+        "name": "fourA",
+        "list": null,
+        "index": "1",
+        "routPath": "http://www.kfive.cc/fourA/index.html"
+      }
+    ]
+  }
+]

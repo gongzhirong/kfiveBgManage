@@ -5,6 +5,10 @@
 </template>
 
 <script>
+
+import './assets/css/font-awesome.css'
+import './assets/css/ace-fonts.css'
+import './assets/css/ace2.css'
 export default {
   name: 'app'
 }
@@ -17,11 +21,6 @@ html, body {
 }
 #app {
   min-height: 100%;
-  color: white;
   background-image: url(./assets/authenticationBg.jpg);
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 </style>

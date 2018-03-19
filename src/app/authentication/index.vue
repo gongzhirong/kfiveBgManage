@@ -38,5 +38,10 @@
     font-size: 2rem;
     font-family: "Roboto","Source Sans Pro","Segoe UI","Gill Sans",Calibri,Tahoma,"Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
     font-weight: 100;
+    text-align: center;
+    color: white;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 </style>

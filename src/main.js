@@ -7,8 +7,7 @@ import store from './vuex/store'
 import ElementUi from 'element-ui'
 import myPlugin from './myPlugin'
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition'
-import 'element-ui/lib/theme-chalk/base.css'
-// import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUi)
 Vue.config.productionTip = false
